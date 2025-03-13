@@ -16,4 +16,4 @@ print("Deve ir ao parque:")
 testes = [[0, 0, 0], [0, 1, 0], [1, 0, 0], [1, 1, 0], [0, 0, 1], [0, 1, 1], [1, 0, 1], [1, 1, 1]]  
 for teste in testes:
     previsao = modelo.predict([teste])
-    print(f"Ensolarado: {teste[0]}, Dia_Util: {teste[1]}, Parque_Lotado: {teste[1]} => Devemos ir ao parque? {'Sim' if previsao[0] == 1 else 'Não'}")
+    print(f"Ensolarado: {teste[0]}, Dia_Util: {teste[1]}, Parque_Lotado: {teste[2]} => Devemos ir ao parque? {'Sim' if previsao[0] == 1 else 'Não'}")
